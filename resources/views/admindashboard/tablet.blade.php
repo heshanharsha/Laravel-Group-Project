@@ -13,11 +13,16 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div class="dashboard-product-button">
+                    <div class="admin-dashboard-product-buttons">
                       <a href="{{route('admin.dashboard.phone')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Phone</a>
                       <a href="{{route('admin.dashboard.laptop')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Laptop</a>
                       <a href="{{route('admin.dashboard.tablet')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Tablet</a>
                       <a href="{{route('admin.dashboard.smartwatch')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Smartwatch</a>
+                    </div>
+
+                    <div class="admin-phone-product">
+                      <h2>admin tablet page</h2>
+
                     </div>
 
                 </div>

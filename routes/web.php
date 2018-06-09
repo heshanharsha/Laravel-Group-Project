@@ -23,4 +23,10 @@ Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/login', 'Auth\AdminLoginController@showLoginform')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.dashboard');
+
+    // make routes to phone,Laptop,Smartwatch and tablet pages
+    Route::get('/phone', 'AdminController@phone')->name('admin.dashboard.phone');
+    Route::get('/laptop', 'AdminController@laptop')->name('admin.dashboard.laptop');
+    Route::get('/tablet', 'AdminController@tablet')->name('admin.dashboard.tablet');
+    Route::get('/smartwatch', 'AdminController@smartwatch')->name('admin.dashboard.smartwatch');
   });

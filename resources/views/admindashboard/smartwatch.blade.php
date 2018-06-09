@@ -13,11 +13,25 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div class="dashboard-product-button">
+                    <div class="admin-dashboard-product-buttons">
                       <a href="{{route('admin.dashboard.phone')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Phone</a>
                       <a href="{{route('admin.dashboard.laptop')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Laptop</a>
                       <a href="{{route('admin.dashboard.tablet')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Tablet</a>
                       <a href="{{route('admin.dashboard.smartwatch')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Smartwatch</a>
+                    </div>
+
+                    <div class="admin-phone-product">
+
+                      <form>
+                        <div class="form-group">
+                          <!-- <label for="formGroupExampleInput">Example label</label> -->
+                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                        </div>
+                      </form>
+
                     </div>
 
                 </div>

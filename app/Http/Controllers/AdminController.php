@@ -25,4 +25,24 @@ class AdminController extends Controller
     {
         return view('admin');
     }
+
+    public function phone()
+    {
+      return view('admindashboard.phone');
+    }
+
+    public function laptop()
+    {
+      return view('admindashboard.laptop');
+    }
+
+    public function tablet()
+    {
+      return view('admindashboard.tablet');
+    }
+
+    public function smartwatch()
+    {
+      return view('admindashboard.smartwatch');
+    }
 }
