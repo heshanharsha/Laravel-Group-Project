@@ -20,7 +20,7 @@
                       <a href="{{route('admin.dashboard.smartwatch')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Smartwatch</a>
                     </div>
 
-                    <div class="admin-phone-product">
+                    <div class="admin-smartwatch-product">
 
                       <form>
                         <div class="form-group">
@@ -30,6 +30,7 @@
                         <div class="form-group">
                           <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
                         </div>
+                        <a href="{{route('admin.dashboard.smartwatch.submit')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">submit</a>
                       </form>
 
                     </div>

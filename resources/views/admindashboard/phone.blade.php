@@ -21,9 +21,21 @@
                     </div>
 
                     <div class="admin-phone-product">
-                      <h2>admin phone page</h2>
+
+                      <form>
+                        <div class="form-group">
+                          <!-- <label for="formGroupExampleInput">Example label</label> -->
+                          <input type="text" class="form-control" name="brand" placeholder="Brand">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="model" placeholder="Model">
+                        </div>
+                        <a href="{{route('admin.dashboard.phone.submit')}}">submit</a>
+                      </form>
 
                     </div>
+
+                  </div>
 
                 </div>
             </div>

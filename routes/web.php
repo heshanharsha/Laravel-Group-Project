@@ -26,7 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     // make routes to phone,Laptop,Smartwatch and tablet pages
     Route::get('/phone', 'AdminController@phone')->name('admin.dashboard.phone');
+    Route::post('/phone', 'PhoneController@submitPhoneDetails')->name('admin.dashboard.phone.submit');
     Route::get('/laptop', 'AdminController@laptop')->name('admin.dashboard.laptop');
     Route::get('/tablet', 'AdminController@tablet')->name('admin.dashboard.tablet');
     Route::get('/smartwatch', 'AdminController@smartwatch')->name('admin.dashboard.smartwatch');
+    Route::post('/smartwatch', 'AdminController@submitSmartwatchDetails')->name('admin.dashboard.smartwatch.submit');
   });
