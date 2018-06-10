@@ -28,6 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/phone', 'AdminController@phone')->name('admin.dashboard.phone');
     Route::post('/phone', 'PhoneController@submitPhoneDetails')->name('admin.dashboard.phone.submit');
     Route::get('/laptop', 'AdminController@laptop')->name('admin.dashboard.laptop');
+    Route::post('/laptop', 'LaptopController@submitLaptopDetails')->name('admin.dashboard.laptop.submit');
     Route::get('/tablet', 'AdminController@tablet')->name('admin.dashboard.tablet');
     Route::get('/smartwatch', 'AdminController@smartwatch')->name('admin.dashboard.smartwatch');
     Route::post('/smartwatch', 'AdminController@submitSmartwatchDetails')->name('admin.dashboard.smartwatch.submit');
