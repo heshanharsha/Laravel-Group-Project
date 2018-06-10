@@ -3,15 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Model\Phone;
 
 class PhoneController extends Controller
 {
   public function submitPhoneDetails(Request $request)
   {
-    Phone::create($request->all());
-    return "You are registerd";
+      $table = new Phone();
+
+      $table->brand       =$request->input('brand');
+      $table->model       =$request->input('model');
+
+      $table->save();
+     // Phone::create($request->all());
+     // return "You are registerd";
+     return redirect()->back()->with('message','phone addes succesfully');
   }
+
   // public function submitPhoneDetails(Request $request)
   // {
   //       $this->validate($request, [

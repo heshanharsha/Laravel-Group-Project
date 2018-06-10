@@ -30,6 +30,7 @@
                         <div class="form-group">
                           <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
                         </div>
+                        {{ csrf_field() }}
                         <a href="{{route('admin.dashboard.smartwatch.submit')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">submit</a>
                       </form>
 
